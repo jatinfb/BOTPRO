@@ -1,28 +1,27 @@
- const fs = require("fs");
+const fs = require("fs");
 module.exports.config = {
-	name: "owner",
-    version: "1.0.1",
-	hasPermssion: 0,
-	credits: "Arun", 
-	description: "no prefix",
-	commandCategory: "No command marks needed",
-	usages: "...",
-    cooldowns: 100, 
+  name: "admins",
+  version: "1.0.1",
+  hasPermssion: 0,
+  credits: "KRISHNA-BABU", 
+  description: "hihihihi",
+  commandCategory: "no prefix",
+  usages: "admin",
+    cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
-	var { threadID, messageID } = event;
-	let react = event.body.toLowerCase();
-	if(react.includes("boss") ||
-     react.includes("virat") || 
-react.includes("owner")) {
-		var msg = {
-				body: " ~░⃟❘꯭꯭❈꯭🔱꯭ 𝗛꯭𝝰፝֯֟‌𝐫꯭ 𖤓꯭ 𝗛꯭𝝰፝֯֟‌꯭𝗿꯭ 𖤓꯭ 𝝡꯭𝝰꯭𝗵‌֟֯፝𝝰꯭𝝳꯭𝞊‌꯭֟֯፝𝝼꯭ 🕉𝄄꯭❈꯭❘⃟꯭░꯭~*_2️⃣0️⃣2️⃣5️⃣ 󱢏__Ξ⤹³🍷𝗗๏𝐠𝗟𝗲 𝗟๏𝐠 𝗗𝐮ɼ 𝐑𝐚ⴙ𝗲 RƏmƏmbƏr 𝐌Ə ||❣️— ༢།धे कृष्णा | 👀__★𝐎𝐖𝐍𝐄𝐑 ✯ 𝐉𝐀𝐓𝐈𝐍  𝐒𝐇𝐀𝐑𝐌𝐀...❤️__●__𝐅𝐁 𝐋𝐈𝐍𝐊-https://www.facebook.com/share/17WfV7Seo3/",attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpeg`)
-			}
-			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("📷", event.messageID, (err) => {}, true)
-		}
-	}
-	module.exports.run = function({ api, event, client, __GLOBAL }) {
+  var { threadID, messageID } = event;
+  if (event.body.indexOf("owner")==0 || event.body.indexOf("Owner")==0 || event.body.indexOf("OWNER")==0 || event.body.indexOf("Owner")==0) {
+    var msg = {
+        body: "👸 🔰𝗔𝗗𝗠𝗜𝗡 𝗜𝗡𝗙𝗢🔰👸\n❥────────────────────❥\n꧁≛⃝💗꯭ꪸ  ⃪꯭̽ ❥༺𝐉𝐀𝐓𝐈𝐍 ༻❦≛⃝💖꧂\n❥────────────────────❥\n𝐁𝐎𝐓 𝐊𝐀 𝐁𝐎𝐒𝐒:-👇👇👇\n   𝗝𝗔𝗧𝗜𝗡 𝗢𝗪𝗡𝗘𝗥\n❥────────────────────❥\n",
+        attachment: 
+fs.createReadStream(__dirname + `/noprefix/JATINBOTDP.jpeg`)
+      }
+      api.sendMessage(msg, threadID, messageID);
+    api.setMessageReaction("👸", event.messageID, (err) => {}, true)
+    }
+  }
+  module.exports.run = function({ api, event, client, __GLOBAL }) {
 
-	}
+  }
