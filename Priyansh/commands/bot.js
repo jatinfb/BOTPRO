@@ -63,7 +63,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "Owner")) {
-     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞ 𝛅ⴙīīꪜ𝝰ɱ 𝛅𝝰īīƞīī 💫\n 🖤Ɣ๏𝘂⃖ 𝐜𝝰ƞ ⴙīīɱ 𝛅ⴙīīꪜ𝝰ɱ🖤\n😳ⴙīī𝛅 ʄ𝝰𝐜𝐞β๏๏𝐊 īī𝗱🤓:- ☞ https://www.facebook.com/profile.php?id=61582547945474\n👋ʄ๏ɼ 𝐀ƞƔ 𝐊īīƞ𝗱 ๏ʄ ⴙ𝐞ɭ𝐏 𝐂๏ƞʈ𝝰𝐜ʈ ʈ𝐞ɭ𝐞𝗴ɼ𝝰ɱ īī𝗱 👉 https://t.me/+4PGA0R8RLl43MDY1😇", threadID);
+     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞ 𝐉𝐀𝐓𝐈𝐍 𝐒𝐇𝐀𝐑𝐌𝐀 💫\n 🖤Ɣ๏𝘂⃖ 𝐜𝝰ƞ ⴙīīɱ 𝐉𝐀𝐓𝐈𝐍🖤\n😳ⴙīī𝛅 ʄ𝝰𝐜𝐞β๏๏𝐊 īī𝗱🤓:- ☞ https://www.facebook.com/share/1ZXCdnJkyf/\n👋ʄ๏ɼ 𝐀ƞƔ 𝐊īīƞ𝗱 ๏ʄ ⴙ𝐞ɭ𝐏 ", threadID);
    };
 
    if ((event.body.toLowerCase() == "tumhe banaya kon hai") || (event.body.toLowerCase() == "tumko banaya kisne")) {
